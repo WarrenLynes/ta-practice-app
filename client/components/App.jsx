@@ -1,5 +1,8 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 export default function App() {
-  return (<h1>App</h1>)
+  const state = useSelector((state) => state)
+  console.log(state);
+  return (<h1>hello</h1>)
 }
